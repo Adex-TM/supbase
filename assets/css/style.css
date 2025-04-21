@@ -493,3 +493,107 @@ footer {
     display: flex;
     gap: 20px;
 }
+
+.modal{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+    position: fixed;
+}
+
+.reg {
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background: #252c2e;
+    max-width: 450px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px 3px #FFFFFF40 inset;
+    position: relative;
+    pointer-events: auto;
+}
+
+.reg h3 {
+    font-size: 24px;
+}
+
+.reg input {
+    background: none;
+    border: #1bc05a 2px solid;
+    margin-bottom: 2%;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.reg h3 {
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+.reg label {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    padding-left: 2%;
+}
+
+.reg input {
+    padding-left: 2%;
+}
+
+.reg input:active {
+    box-shadow: 0px 0px 8px 2px #FFFFFF40 inset;
+}
+
+.reg input:focus {
+    box-shadow: 0px 0px 8px 2px #FFFFFF40 inset;
+    outline: none;
+    padding-left: 4%;
+    transform: scale(0.97);
+}
+
+.reg input[type=submit] {
+    margin-top: 2%;
+    padding-left: 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.reg input[type=submit]:focus {
+    padding-left: 0;
+}
+
+.reg input[type=submit]:hover {
+    box-shadow: 0px 0px 8px 2px #FFFFFF40 inset;
+    transform: scale(0.97);
+}
+
+.reg span {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 12px;
+}
+
+.reg span button {
+    background: none;
+    outline: none;
+    border: none;
+    padding-left: 1%;
+    color: #FFF600;
+}
+
+.close{
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 27px;
+    position: absolute;
+    right: 40px;
+    top: 33px;
+}
