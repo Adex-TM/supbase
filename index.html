@@ -1,495 +1,466 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>supabase</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="assets/main.js" defer></script>
-    <link rel="shortcut icon" href="assets/media/logo/favicon.png" type="image/x-icon">
-  </head>
 
-  <body>
-    <!-- header -->
-    <header>
-      <div class="container">
-        <div class="header_left">
-          <img src="assets/media/logo/logo.svg" alt="" />
-          <nav>
-            <div class="dropdown">
-                <a href="#" class="dropbtn">
-                  Product
-                  <img src="assets/media/header/point.svg" alt="" class="drop-icon" />
-                </a>
-                <div class="dropdown-content">
-                  <a href="#">product</a>
-                  <a href="#">product</a>
-                  <a href="#">product</a>
-                </div>
-              </div>
-              
-              <div class="dropdown">
-                <a href="#" class="dropbtn">
-                  Developers
-                  <img src="assets/media/header/point.svg" alt="" class="drop-icon" />
-                </a>
-                <div class="dropdown-content">
-                  <a href="#">developer</a>
-                  <a href="#">developer</a>
-                  <a href="#">developer</a>
-                </div>
-              </div>
-            <a href="#">Beta</a>
-            <a href="#">Pricing</a>
-          </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>supabase</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/main.js" defer></script>
+  <link rel="shortcut icon" href="assets/media/logo/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="container">
+      <div class="header_left">
+        <img src="assets/media/logo/logo.svg" alt="" />
+        <nav>
+          <div class="dropdown">
+            <a href="#" class="dropbtn">
+              Product
+              <img src="assets/media/header/point.svg" alt="" class="drop-icon" />
+            </a>
+            <div class="dropdown-content">
+              <a href="#">product</a>
+              <a href="#">product</a>
+              <a href="#">product</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <a href="#" class="dropbtn">
+              Developers
+              <img src="assets/media/header/point.svg" alt="" class="drop-icon" />
+            </a>
+            <div class="dropdown-content">
+              <a href="#">developer</a>
+              <a href="#">developer</a>
+              <a href="#">developer</a>
+            </div>
+          </div>
+          <a href="#">Beta</a>
+          <a href="#">Pricing</a>
+        </nav>
+      </div>
+      <div class="header_btns">
+        <button class="btn btn_1">Start your project</button>
+        <button class="btn btn_2" onclick="showModal()">Sign in</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- banner -->
+  <div class="banner">
+    <div class="container">
+      <div class="banner-text">
+        <div class="subtitle">
+          <img src="assets/media/banner/img.svg" alt="">
+          <p>Storage</p>
         </div>
-        <div class="header_btns">
-          <button class="btn btn_1">Start your project</button>
-          <button class="btn btn_2">Sign in</button>
+        <h1>Store and serve <br>any type of digital content</h1>
+        <p>An open source Object store service with unlimited scalability, for any file type. <br><br>With
+          custom policies and permissions that are familiar and easy to implement.</p>
+        <a href="" class="btn">Start a project</a>
+      </div>
+      <div class="slider">
+        <div class="slides">
+          <div class="slide"><img src="assets/media/banner/banner.png" alt=""></div>
+          <div class="slide"><img src="assets/media/banner/crocodilo.png" alt=""></div>
+          <div class="slide"><img src="assets/media/banner/nike.png" alt=""></div>
         </div>
       </div>
-    </header>
-
-    <!-- banner -->
-    <div class="banner">
-      <div class="container">
-          <div class="banner-text">
-              <div class="subtitle">
-                  <img src="assets/media/banner/img.svg" alt="">
-                  <p>Storage</p>
-              </div>
-              <h1>Store and serve <br>any type of digital content</h1>
-              <p>An open source Object store service with unlimited scalability, for any file type. <br><br>With
-                  custom policies and permissions that are familiar and easy to implement.</p>
-              <a href="" class="btn">Start a project</a>
-          </div>
-          <div class="slider">
-              <div class="slides">
-                  <div class="slide"><img src="assets/media/banner/banner.png" alt=""></div>
-                  <div class="slide"><img src="assets/media/banner/crocodilo.png" alt=""></div>
-                  <div class="slide"><img src="assets/media/banner/nike.png" alt=""></div>
-              </div>
-          </div>
-      </div>
+    </div>
   </div>
 
-    <!-- adv -->
-    <div class="adv container">
-      <div class="card">
-        <img src="assets/media/adv/inter.svg" alt="" />
-        <h4>Interoperable</h4>
-        <p>
-          Integrates well with the rest of Supabase ecosystem, including Auth
-          and Postgres.
-        </p>
+  <!-- adv -->
+  <div class="adv container">
+    <div class="card">
+      <img src="assets/media/adv/inter.svg" alt="" />
+      <h4>Interoperable</h4>
+      <p>
+        Integrates well with the rest of Supabase ecosystem, including Auth
+        and Postgres.
+      </p>
+    </div>
+    <div class="card">
+      <img src="assets/media/adv/fast.svg" alt="" />
+      <h4>Lightning fast</h4>
+      <p>
+        Thin API server layer that leverages Postgres' permissions and
+        performance.
+      </p>
+    </div>
+    <div class="card">
+      <img src="assets/media/adv/depen.svg" alt="" />
+      <h4>Dependable</h4>
+      <p style="font-size: 13px">
+        Enterprise-level scalability and durability.
+      </p>
+    </div>
+  </div>
+
+  <!-- guide -->
+  <div class="guide container">
+    <h2>Sleek dashboard for managing your media</h2>
+    <h3>A complete Object Explorer so that any of your team can use.</h3>
+    <h4>
+      Drag and drop uploading, moving objects, and multiple object selection.
+      As easy as working on your desktop.
+    </h4>
+    <div class="catalog">
+      <div class="filtering">
+        <div class="filter">
+          <button autofocus class="btn_filter active">File previews</button>
+          <button class="btn_filter">Column view</button>
+          <button class="btn_filter">List view</button>
+          <button class="btn_filter">Multi select actions</button>
+          <button class="btn_filter">Path navigator</button>
+        </div>
+        <img src="assets/media/guide/catalog.png" alt="" style="max-height: 367px" class="img_filter active" />
+        <img src="assets/media/guide/colum.png" alt="" style="max-height: 367px" class="img_filter" />
+        <img src="assets/media/guide/list.png" alt="" style="max-height: 367px" class="img_filter" />
+        <img src="assets/media/guide/multik.png" alt="" style="max-height: 367px" class="img_filter" />
+        <img src="assets/media/guide/path.png" alt="" style="max-height: 367px" class="img_filter" />
       </div>
-      <div class="card">
-        <img src="assets/media/adv/fast.svg" alt="" />
-        <h4>Lightning fast</h4>
-        <p>
-          Thin API server layer that leverages Postgres' permissions and
-          performance.
+      <div class="desc active">
+        <h4>File previews</h4>
+        <h5>
+          Preview any media type, including video and <br />
+          audio.
+        </h5>
+        <h4>Check out our example app</h4>
+        <div class="example">
+          <h5>Profile management example</h5>
+          <p style="margin-bottom: 16px">
+            Update a user account with public profile <br />information,
+            including uploading a profile image.
+          </p>
+          <p>
+            Created by:
+            <img src="assets/media/guide/careated.svg" alt="" style="padding: 0 5px" />
+            supabase
+          </p>
+        </div>
+        <p style="
+              font-size: 14px;
+              margin-top: 21px;
+              margin-bottom: 12px;
+              display: flex;
+              align-items: center;
+              margin-left: 21px;
+            ">
+          nextjs-ts-user-management
+          <img src="assets/media/guide/cat.svg" alt="" style="margin-left: 5px" />
         </p>
+        <button>
+          <span style="border-right: 1px solid #1269d3; padding: 10px">▲</span>Deploy
+        </button>
       </div>
-      <div class="card">
-        <img src="assets/media/adv/depen.svg" alt="" />
-        <h4>Dependable</h4>
-        <p style="font-size: 13px">
-          Enterprise-level scalability and durability.
+      <div class="desc">
+        <h4>Column view</h4>
+        <h5>
+          Navigate through folders with intuitive <br />
+          column-based interface.
+        </h5>
+        <h4>Explore our demo project</h4>
+        <div class="example">
+          <h5>File browser implementation</h5>
+          <p style="margin-bottom: 16px">
+            A complete file browser with column navigation <br />
+            and file type icons.
+          </p>
+          <p>
+            Created by:
+            <img src="assets/media/guide/careated.svg" alt="" style="padding: 0 5px" />
+            dev-team
+          </p>
+        </div>
+        <p style="
+              font-size: 14px;
+              margin-top: 21px;
+              margin-bottom: 12px;
+              display: flex;
+              align-items: center;
+              margin-left: 21px;
+            ">
+          react-file-browser
+          <img src="assets/media/guide/cat.svg" alt="" style="margin-left: 5px" />
         </p>
+        <button>
+          <span style="border-right: 1px solid #1269d3; padding: 10px">▲</span>Try Demo
+        </button>
+      </div>
+
+      <div class="desc">
+        <h4>List view</h4>
+        <h5>
+          Compact list display with sorting options <br />
+          and quick actions.
+        </h5>
+        <h4>Featured template</h4>
+        <div class="example">
+          <h5>Document manager</h5>
+          <p style="margin-bottom: 16px">
+            Manage documents with list view, filters <br />
+            and bulk operations.
+          </p>
+          <p>
+            Created by:
+            <img src="assets/media/guide/careated.svg" alt="" style="padding: 0 5px" />
+            template-creator
+          </p>
+        </div>
+        <p style="
+              font-size: 14px;
+              margin-top: 21px;
+              margin-bottom: 12px;
+              display: flex;
+              align-items: center;
+              margin-left: 21px;
+            ">
+          vue-document-manager
+          <img src="assets/media/guide/cat.svg" alt="" style="margin-left: 5px" />
+        </p>
+        <button>
+          <span style="border-right: 1px solid #1269d3; padding: 10px">▲</span>Use Template
+        </button>
+      </div>
+
+      <div class="desc">
+        <h4>Multi select actions</h4>
+        <h5>
+          Perform batch operations on multiple files <br />
+          with powerful tools.
+        </h5>
+        <h4>Popular integration</h4>
+        <div class="example">
+          <h5>Cloud storage manager</h5>
+          <p style="margin-bottom: 16px">
+            Connect to cloud services and manage files <br />
+            across different providers.
+          </p>
+          <p>
+            Created by:
+            <img src="assets/media/guide/careated.svg" alt="" style="padding: 0 5px" />
+            cloud-integrations
+          </p>
+        </div>
+        <p style="
+              font-size: 14px;
+              margin-top: 21px;
+              margin-bottom: 12px;
+              display: flex;
+              align-items: center;
+              margin-left: 21px;
+            ">
+          angular-storage-connector
+          <img src="assets/media/guide/cat.svg" alt="" style="margin-left: 5px" />
+        </p>
+        <button>
+          <span style="border-right: 1px solid #1269d3; padding: 10px">▲</span>Connect Service
+        </button>
+      </div>
+
+      <div class="desc">
+        <h4>Path navigator</h4>
+        <h5>
+          Quickly jump to any folder in your hierarchy <br />
+          with breadcrumb navigation.
+        </h5>
+        <h4>Starter kit available</h4>
+        <div class="example">
+          <h5>Enterprise file system</h5>
+          <p style="margin-bottom: 16px">
+            Complete solution for corporate file management <br />
+            with advanced permissions.
+          </p>
+          <p>
+            Created by:
+            <img src="assets/media/guide/careated.svg" alt="" style="padding: 0 5px" />
+            enterprise-solutions
+          </p>
+        </div>
+        <p style="
+              font-size: 14px;
+              margin-top: 21px;
+              margin-bottom: 12px;
+              display: flex;
+              align-items: center;
+              margin-left: 21px;
+            ">
+          enterprise-file-system
+          <img src="assets/media/guide/cat.svg" alt="" style="margin-left: 5px" />
+        </p>
+        <button>
+          <span style="border-right: 1px solid #1269d3; padding: 10px">▲</span>Download Kit
+        </button>
       </div>
     </div>
+  </div>
 
-    <!-- guide -->
-    <div class="guide container">
-      <h2>Sleek dashboard for managing your media</h2>
-      <h3>A complete Object Explorer so that any of your team can use.</h3>
-      <h4>
-        Drag and drop uploading, moving objects, and multiple object selection.
-        As easy as working on your desktop.
-      </h4>
-      <div class="catalog">
-        <div class="filtering">
-          <div class="filter">
-            <button autofocus class="btn_filter active">File previews</button>
-            <button class="btn_filter">Column view</button>
-            <button class="btn_filter">List view</button>
-            <button class="btn_filter">Multi select actions</button>
-            <button class="btn_filter">Path navigator</button>
-          </div>
-          <img src="assets/media/guide/catalog.png" alt="" style="max-height: 367px" class="img_filter active"/>
-            <img src="assets/media/guide/colum.png" alt="" style="max-height: 367px" class="img_filter"/>
-          <img src="assets/media/guide/list.png" alt="" style="max-height: 367px" class="img_filter"/>
-            <img src="assets/media/guide/multik.png" alt="" style="max-height: 367px" class="img_filter"/>
-            <img src="assets/media/guide/path.png" alt="" style="max-height: 367px" class="img_filter"/>
+  <!-- faq -->
+  <div class="faq container">
+    <h2>
+      Integrates natively <br />
+      with Supabase Auth
+    </h2>
+    <button class="accordion">
+      Using Postgres Row Level Security to create Object access rules.
+      <img src="assets/media/header/point.svg" alt="" />
+    </button>
+    <div class="panel">
+      <p>
+        Storage Authorization is built around Postgres so that you can use any
+        combination of SQL, Postgres functions, and even your own metadata to
+        write policies.Storage Authorization is built around Postgres so that
+        you can use any combination of SQL, Postgres functions, and even your
+        own metadata to write policies.Storage is built around Postgres so
+        that you can use any combination of SQL, Postgres functions, and even
+        your own metadata to write policies.
+      </p>
+      <a href=""><img src="assets/media/faq/arrow.svg" alt="" />Expore
+        documentation</a>
+    </div>
+    <button class="accordion">
+      Using Postgres Row Level Security to create Object access rules.
+      <img src="assets/media/header/point.svg" alt="" />
+    </button>
+    <div class="panel">
+      <p>
+        Storage Authorization is built around Postgres so that you can use any
+        combination of SQL, Postgres functions, and even your own metadata to
+        write policies.Storage Authorization is built around Postgres so that
+        you can use any combination of SQL, Postgres functions, and even your
+        own metadata to write policies.Storage is built around Postgres so
+        that you can use any combination of SQL, Postgres functions, and even
+        your own metadata to write policies.
+      </p>
+      <a href=""><img src="assets/media/faq/arrow.svg" alt="" />Expore
+        documentation</a>
+    </div>
+    <button class="accordion">
+      Using Postgres Row Level Security to create Object access rules.
+      <img src="assets/media/header/point.svg" alt="" />
+    </button>
+    <div class="panel">
+      <p>
+        Storage Authorization is built around Postgres so that you can use any
+        combination of SQL, Postgres functions, and even your own metadata to
+        write policies.Storage Authorization is built around Postgres so that
+        you can use any combination of SQL, Postgres functions, and even your
+        own metadata to write policies.Storage is built around Postgres so
+        that you can use any combination of SQL, Postgres functions, and even
+        your own metadata to write policies.
+      </p>
+      <a href=""><img src="assets/media/faq/arrow.svg" alt="" />Expore
+        documentation</a>
+    </div>
+    <button class="accordion">
+      Using Postgres Row Level Security to create Object access rules.
+      <img src="assets/media/header/point.svg" alt="" />
+    </button>
+    <div class="panel">
+      <p>
+        Storage Authorization is built around Postgres so that you can use any
+        combination of SQL, Postgres functions, and even your own metadata to
+        write policies.Storage Authorization is built around Postgres so that
+        you can use any combination of SQL, Postgres functions, and even your
+        own metadata to write policies.Storage is built around Postgres so
+        that you can use any combination of SQL, Postgres functions, and even
+        your own metadata to write policies.
+      </p>
+      <a href=""><img src="assets/media/faq/arrow.svg" alt="" />Expore
+        documentation</a>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="container">
+    <div class="footer_top">
+      <div class="first_column">
+        <div class="footer_logo">
+          <img src="assets/media/logo/logo.svg" alt="" />
         </div>
-        <div class="desc active">
-          <h4>File previews</h4>
-          <h5>
-            Preview any media type, including video and <br />
-            audio.
-          </h5>
-          <h4>Check out our example app</h4>
-          <div class="example">
-            <h5>Profile management example</h5>
-            <p style="margin-bottom: 16px">
-              Update a user account with public profile <br />information,
-              including uploading a profile image.
-            </p>
-            <p>
-              Created by:
-              <img
-                src="assets/media/guide/careated.svg"
-                alt=""
-                style="padding: 0 5px"
-              />
-              supabase
-            </p>
-          </div>
-          <p
-            style="
-              font-size: 14px;
-              margin-top: 21px;
-              margin-bottom: 12px;
-              display: flex;
-              align-items: center;
-              margin-left: 21px;
-            "
-          >
-            nextjs-ts-user-management
-            <img
-              src="assets/media/guide/cat.svg"
-              alt=""
-              style="margin-left: 5px"
-            />
-          </p>
-          <button>
-            <span style="border-right: 1px solid #1269d3; padding: 10px">▲</span
-            >Deploy
-          </button>
+        <div class="footer_icons">
+          <a href="#"><img src="assets/media/footer/twitter.svg" alt="" /></a>
+          <a href="#"><img src="assets/media/footer/cat.svg" alt="" /></a>
         </div>
-        <div class="desc">
-          <h4>Column view</h4>
-          <h5>
-            Navigate through folders with intuitive <br />
-            column-based interface.
-          </h5>
-          <h4>Explore our demo project</h4>
-          <div class="example">
-            <h5>File browser implementation</h5>
-            <p style="margin-bottom: 16px">
-              A complete file browser with column navigation <br />
-              and file type icons.
-            </p>
-            <p>
-              Created by:
-              <img
-                src="assets/media/guide/careated.svg"
-                alt=""
-                style="padding: 0 5px"
-              />
-              dev-team
-            </p>
-          </div>
-          <p
-            style="
-              font-size: 14px;
-              margin-top: 21px;
-              margin-bottom: 12px;
-              display: flex;
-              align-items: center;
-              margin-left: 21px;
-            "
-          >
-            react-file-browser
-            <img
-              src="assets/media/guide/cat.svg"
-              alt=""
-              style="margin-left: 5px"
-            />
-          </p>
-          <button>
-            <span style="border-right: 1px solid #1269d3; padding: 10px">▲</span
-            >Try Demo
-          </button>
+      </div>
+      <div class="info_columns">
+        <div class="second_column">
+          <h3>Product</h3>
+          <a href="#">Database</a>
+          <a href="#">Authentication</a>
+          <a href="#">Storage</a>
+          <a href="#">Functions <br /><span>Coming soon</span></a>
+          <a href="#">Pricing</a>
         </div>
-        
-        <div class="desc">
-          <h4>List view</h4>
-          <h5>
-            Compact list display with sorting options <br />
-            and quick actions.
-          </h5>
-          <h4>Featured template</h4>
-          <div class="example">
-            <h5>Document manager</h5>
-            <p style="margin-bottom: 16px">
-              Manage documents with list view, filters <br />
-              and bulk operations.
-            </p>
-            <p>
-              Created by:
-              <img
-                src="assets/media/guide/careated.svg"
-                alt=""
-                style="padding: 0 5px"
-              />
-              template-creator
-            </p>
-          </div>
-          <p
-            style="
-              font-size: 14px;
-              margin-top: 21px;
-              margin-bottom: 12px;
-              display: flex;
-              align-items: center;
-              margin-left: 21px;
-            "
-          >
-            vue-document-manager
-            <img
-              src="assets/media/guide/cat.svg"
-              alt=""
-              style="margin-left: 5px"
-            />
-          </p>
-          <button>
-            <span style="border-right: 1px solid #1269d3; padding: 10px">▲</span
-            >Use Template
-          </button>
+        <div class="third_column">
+          <h3>Resources</h3>
+          <a href="#">Support</a>
+          <a href="#">Case Studies</a>
+          <a href="#">System Status</a>
+          <a href="#">Terms of service</a>
         </div>
-        
-        <div class="desc">
-          <h4>Multi select actions</h4>
-          <h5>
-            Perform batch operations on multiple files <br />
-            with powerful tools.
-          </h5>
-          <h4>Popular integration</h4>
-          <div class="example">
-            <h5>Cloud storage manager</h5>
-            <p style="margin-bottom: 16px">
-              Connect to cloud services and manage files <br />
-              across different providers.
-            </p>
-            <p>
-              Created by:
-              <img
-                src="assets/media/guide/careated.svg"
-                alt=""
-                style="padding: 0 5px"
-              />
-              cloud-integrations
-            </p>
-          </div>
-          <p
-            style="
-              font-size: 14px;
-              margin-top: 21px;
-              margin-bottom: 12px;
-              display: flex;
-              align-items: center;
-              margin-left: 21px;
-            "
-          >
-            angular-storage-connector
-            <img
-              src="assets/media/guide/cat.svg"
-              alt=""
-              style="margin-left: 5px"
-            />
-          </p>
-          <button>
-            <span style="border-right: 1px solid #1269d3; padding: 10px">▲</span
-            >Connect Service
-          </button>
+        <div class="fourth_column">
+          <h3>Developers</h3>
+          <a href="#">Documentation</a>
+          <a href="#">API Reference</a>
+          <a href="#">Guides</a>
         </div>
-        
-        <div class="desc">
-          <h4>Path navigator</h4>
-          <h5>
-            Quickly jump to any folder in your hierarchy <br />
-            with breadcrumb navigation.
-          </h5>
-          <h4>Starter kit available</h4>
-          <div class="example">
-            <h5>Enterprise file system</h5>
-            <p style="margin-bottom: 16px">
-              Complete solution for corporate file management <br />
-              with advanced permissions.
-            </p>
-            <p>
-              Created by:
-              <img
-                src="assets/media/guide/careated.svg"
-                alt=""
-                style="padding: 0 5px"
-              />
-              enterprise-solutions
-            </p>
-          </div>
-          <p
-            style="
-              font-size: 14px;
-              margin-top: 21px;
-              margin-bottom: 12px;
-              display: flex;
-              align-items: center;
-              margin-left: 21px;
-            "
-          >
-            enterprise-file-system
-            <img
-              src="assets/media/guide/cat.svg"
-              alt=""
-              style="margin-left: 5px"
-            />
-          </p>
-          <button>
-            <span style="border-right: 1px solid #1269d3; padding: 10px">▲</span
-            >Download Kit
-          </button>
+        <div class="fifth_column">
+          <h3>Company</h3>
+          <a href="#">Blog</a>
+          <a href="#">Open Source</a>
+          <a href="#">Humans.txt</a>
+          <a href="#">Lawyers.txt</a>
         </div>
       </div>
     </div>
-
-    <!-- faq -->
-    <div class="faq container">
-      <h2>
-        Integrates natively <br />
-        with Supabase Auth
-      </h2>
-      <button class="accordion">
-        Using Postgres Row Level Security to create Object access rules.
-        <img src="assets/media/header/point.svg" alt="" />
-      </button>
-      <div class="panel">
-        <p>
-          Storage Authorization is built around Postgres so that you can use any
-          combination of SQL, Postgres functions, and even your own metadata to
-          write policies.Storage Authorization is built around Postgres so that
-          you can use any combination of SQL, Postgres functions, and even your
-          own metadata to write policies.Storage is built around Postgres so
-          that you can use any combination of SQL, Postgres functions, and even
-          your own metadata to write policies.
-        </p>
-        <a href=""
-          ><img src="assets/media/faq/arrow.svg" alt="" />Expore
-          documentation</a
-        >
-      </div>
-      <button class="accordion">
-        Using Postgres Row Level Security to create Object access rules.
-        <img src="assets/media/header/point.svg" alt="" />
-      </button>
-      <div class="panel">
-        <p>
-          Storage Authorization is built around Postgres so that you can use any
-          combination of SQL, Postgres functions, and even your own metadata to
-          write policies.Storage Authorization is built around Postgres so that
-          you can use any combination of SQL, Postgres functions, and even your
-          own metadata to write policies.Storage is built around Postgres so
-          that you can use any combination of SQL, Postgres functions, and even
-          your own metadata to write policies.
-        </p>
-        <a href=""
-          ><img src="assets/media/faq/arrow.svg" alt="" />Expore
-          documentation</a
-        >
-      </div>
-      <button class="accordion">
-        Using Postgres Row Level Security to create Object access rules.
-        <img src="assets/media/header/point.svg" alt="" />
-      </button>
-      <div class="panel">
-        <p>
-          Storage Authorization is built around Postgres so that you can use any
-          combination of SQL, Postgres functions, and even your own metadata to
-          write policies.Storage Authorization is built around Postgres so that
-          you can use any combination of SQL, Postgres functions, and even your
-          own metadata to write policies.Storage is built around Postgres so
-          that you can use any combination of SQL, Postgres functions, and even
-          your own metadata to write policies.
-        </p>
-        <a href=""
-          ><img src="assets/media/faq/arrow.svg" alt="" />Expore
-          documentation</a
-        >
-      </div>
-      <button class="accordion">
-        Using Postgres Row Level Security to create Object access rules.
-        <img src="assets/media/header/point.svg" alt="" />
-      </button>
-      <div class="panel">
-        <p>
-          Storage Authorization is built around Postgres so that you can use any
-          combination of SQL, Postgres functions, and even your own metadata to
-          write policies.Storage Authorization is built around Postgres so that
-          you can use any combination of SQL, Postgres functions, and even your
-          own metadata to write policies.Storage is built around Postgres so
-          that you can use any combination of SQL, Postgres functions, and even
-          your own metadata to write policies.
-        </p>
-        <a href=""
-          ><img src="assets/media/faq/arrow.svg" alt="" />Expore
-          documentation</a
-        >
+    <div class="footer_bottom">
+      <p>© Supabase Inc</p>
+      <div class="darkmode">
+        <img src="assets/media/footer/sun.svg" alt="" />
+        <img src="assets/media/footer/change.png" alt="" style="height: 20px; margin-top: 7px;" />
+        <img src="assets/media/footer/night.svg" alt="" />
       </div>
     </div>
+  </footer>
 
-    <!-- footer -->
-    <footer class="container">
-      <div class="footer_top">
-        <div class="first_column">
-          <div class="footer_logo">
-            <img src="assets/media/logo/logo.svg" alt="" />
-          </div>
-          <div class="footer_icons">
-            <a href="#"><img src="assets/media/footer/twitter.svg" alt="" /></a>
-            <a href="#"><img src="assets/media/footer/cat.svg" alt="" /></a>
-          </div>
-        </div>
-        <div class="info_columns">
-          <div class="second_column">
-            <h3>Product</h3>
-            <a href="#">Database</a>
-            <a href="#">Authentication</a>
-            <a href="#">Storage</a>
-            <a href="#">Functions <br /><span>Coming soon</span></a>
-            <a href="#">Pricing</a>
-          </div>
-          <div class="third_column">
-            <h3>Resources</h3>
-            <a href="#">Support</a>
-            <a href="#">Case Studies</a>
-            <a href="#">System Status</a>
-            <a href="#">Terms of service</a>
-          </div>
-          <div class="fourth_column">
-            <h3>Developers</h3>
-            <a href="#">Documentation</a>
-            <a href="#">API Reference</a>
-            <a href="#">Guides</a>
-          </div>
-          <div class="fifth_column">
-            <h3>Company</h3>
-            <a href="#">Blog</a>
-            <a href="#">Open Source</a>
-            <a href="#">Humans.txt</a>
-            <a href="#">Lawyers.txt</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer_bottom">
-        <p>© Supabase Inc</p>
-        <div class="darkmode">
-          <img src="assets/media/footer/sun.svg" alt="" />
-          <img src="assets/media/footer/change.png" alt="" style="height: 20px; margin-top: 7px;" />
-          <img src="assets/media/footer/night.svg" alt="" />
-        </div>
-      </div>
-    </footer>
+<form action="" method="post" class="container modal" id="modal" style="display: none;">
+  <div class="reg">
+    <button type="button" onclick="hideModal()" class="close">×</button>
+    <h3>Регистрация</h3>
+    <label>Имя</label>
+    <input type="text" />
+    <label>Фамилия</label>
+    <input type="text" />
+    <label>Почта</label>
+    <input type="email" />
+    <label>Пароль</label>
+    <input type="password" />
+    <label>Подтверждение пароля</label>
+    <input type="password" />
+    <input type="submit" value="Зарегистрироваться" />
+    <span>Уже есть аккаунт? <button type="button" onclick="showModalLog()">Войти</button></span>
+  </div>
+</form>
 
-  </body>
+<form action="" method="post" class="container modal" id="modal_log">
+  <div class="reg">
+    <button type="button" onclick="hideModalLog()" class="close">×</button>
+    <h3>Вход</h3>
+    <label>Почта</label>
+    <input type="email" />
+    <label>Пароль</label>
+    <input type="password" />
+    <input type="submit" value="Войти" />
+    <span>Нет аккаунта? <button type="button" onclick="showModal()">Зарегистрироваться</button></span>
+  </div>
+</form>
+
+</body>
+
 </html>
